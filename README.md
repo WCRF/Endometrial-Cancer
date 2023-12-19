@@ -1,2 +1,2 @@
-# Endometrial-Cancer
-This GitHub page hosts the interactive figures created for our WCRF systematic review project on *"Association of intermediate exposures and the risk of Endometrial Cancer"*
+# Endometrial Cancer
+This repository is created to host all interactive plots and supplementary materials that we produced in our WCRF research for investigating the association of circulating and tissue intermediate markers with Endometrial cancer. 
