@@ -1,55 +1,60 @@
-/* Importing a Google Font for improved typography */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
-
-/* Resetting default browser styles */
+/* Existing styles */
 body {
-    font-family: 'Open Sans', sans-serif; /* Using Open Sans font */
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9; /* Light background for the entire page */
 }
 
-/* Styling the navigation bar */
+/* Updated nav bar styles */
 nav {
+    width: 100%; /* Full width of the viewport */
     background: linear-gradient(to right, #6dd5ed, #2193b0); /* Gradient background */
     border-bottom: 2px solid #e7e7e7;
     text-align: center;
+    padding: 10px 0; /* Add vertical padding to increase height */
 }
 
-/* Removing default list styles and resetting margin and padding */
+/* Updated styles for nav ul */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: inline-block; /* Centers the menu in the nav bar */
+    text-align: center; /* Center-align the list items */
 }
 
-/* Inline display of menu items with improved spacing */
+/* Updated styles for nav ul li */
 nav ul li {
     display: inline;
-    margin-right: 30px;
+    margin-right: 20px; /* Adjusted right margin for spacing */
 }
 
-/* Styling the menu links */
+/* Updated styles for nav ul li a */
 nav ul li a {
     text-decoration: none;
-    color: #ffffff; /* Light text color for better contrast with the background */
-    font-weight: 600; /* Bold font weight */
-    font-size: 16px; /* Larger font size for readability */
-    padding: 10px; /* Padding for clickable area */
+    color: #ffffff; /* White color text for better visibility */
+    font-weight: 600; /* Bold font weight for prominence */
+    font-size: 18px; /* Slightly larger font size for readability */
+    padding: 10px 15px; /* Padding for better sizing and clickable area */
     transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for hover effects */
 }
 
-/* Hover effect for menu links */
+/* Hover effect for the navigation links */
 nav ul li a:hover {
-    color: #fff; /* Change color on hover */
-    text-decoration: underline; /* Underline text on hover */
+    color: #ffcc00; /* Change color on hover for visibility */
+    text-decoration: underline; /* Underline on hover for emphasis */
 }
 
-/* Responsive design for smaller screens */
+/* Ensure responsive design */
 @media screen and (max-width: 600px) {
     nav ul li {
         display: block;
         text-align: center;
         margin-right: 0;
+    }
+
+    nav ul li a {
+        display: block; /* Full-width links on smaller screens for easier touch */
+        margin-bottom: 10px; /* Added bottom margin for spacing */
     }
 }
