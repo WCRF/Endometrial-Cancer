@@ -22,7 +22,52 @@ nav ul {
     display: inline-block; /* Centers the menu in the nav bar */
     text-align: center; /* Center-align the list items */
 }
+/* Left Menu Styles */
+.left-menu {
+    position: fixed;
+    left: 0;
+    top: 50px; /* Adjust based on your header height */
+    width: 200px; /* Adjust as needed */
+    padding: 15px;
+    background-color: #f2f2f2;
+    /* Add more styling as needed */
+}
 
+.left-menu h3, .left-menu ul {
+    /* Add styling for the heading and list */
+}
+
+/* Right Menu Styles */
+.right-menu {
+    position: fixed;
+    right: 0;
+    top: 50px; /* Adjust based on your header height */
+    width: 200px; /* Adjust as needed */
+    padding: 15px;
+    background-color: #f2f2f2;
+    /* Add more styling as needed */
+}
+
+.right-menu h3, .right-menu ul {
+    /* Add styling for the heading and list */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e7e7e7;
+    /* Add more styling as needed */
+}
+
+/* Responsive Design Adjustments */
+@media screen and (max-width: 600px) {
+    .left-menu, .right-menu {
+        width: 100%;
+        position: static;
+        padding: 10px;
+    }
+}
 /* Updated styles for nav ul li */
 nav ul li {
     display: inline;
