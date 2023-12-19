@@ -34,8 +34,8 @@ nav ul li a {
     text-decoration: none;
     color: #ffffff; /* Light text color for better contrast with the background */
     font-weight: 600; /* Bold font weight */
-    font-size: 16px; /* Larger font size for readability */
-    padding: 10px; /* Padding for clickable area */
+    font-size: 24px; /* Larger font size for readability */
+    padding: 20px; /* Padding for clickable area */
     transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for hover effects */
 }
 
