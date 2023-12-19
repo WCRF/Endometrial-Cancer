@@ -124,3 +124,17 @@ footer {
         padding-right: 10px; /* Reduced padding for smaller screens */
     }
 }
+.back-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px 0;
+    background-color: #6dd5ed;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    background-color: #2193b0;
+}
