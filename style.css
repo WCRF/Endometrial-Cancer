@@ -113,3 +113,14 @@ footer {
 .readme-container strong {
     color: #6dd5ed;
 }
+.main-content {
+    padding-left: 220px; /* Adjust as needed, should be >= width of the left menu */
+    padding-right: 220px; /* Adjust as needed, should be >= width of the right menu */
+}
+
+@media screen and (max-width: 600px) {
+    .main-content {
+        padding-left: 10px; /* Reduced padding for smaller screens */
+        padding-right: 10px; /* Reduced padding for smaller screens */
+    }
+}
