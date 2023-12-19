@@ -1,24 +1,48 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <!-- Title of your webpage -->
-    <title>Endometrial Cancer Research</title>
+/* Existing styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-    <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* Updated nav bar styles */
+nav {
+    width: 100%; /* Full width of the viewport */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* Gradient background */
+    border-bottom: 2px solid #e7e7e7;
+    text-align: center;
+}
 
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="circulating-markers.html">Endometrial Cancer - Circulating Markers</a></li>
-        <li><a href="expression-profiles.html">Endometrial Cancer - Expression Profiles in Tissues</a></li>
-        <li><a href="miscellaneous.html">Miscellaneous</a></li>
-    </ul>
-</nav>
+/* Updated styles for nav ul */
+nav ul {
+    list-style: none;
+    padding: 10px 0; /* Adds padding at the top and bottom */
+    margin: 0;
+    display: inline-block; /* Centers the menu in the nav bar */
+    text-align: left;
+}
 
-<!-- The rest of your webpage's content will go here -->
+/* Updated styles for nav ul li */
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
 
-</body>
-</html>
+/* Updated styles for nav ul li a */
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 20px 255px; /* Adjust padding as needed */
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+/* Ensure responsive design */
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin-right: 0;
+    }
+}
