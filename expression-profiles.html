@@ -17,12 +17,12 @@
     <h1>Differential Biomarker expression profiles in Endometrial cancer Compared to Normal Endometrium and Hyperplastic Endometrium</h1>
     <p>Write the details for expression profiles in Endometrial cancer compared to normal endometrium, tumor adjacent endometrial tissue and hyperplastic endometrial tissue types.</p>
     
-    <!-- Embedding EC_Tissue_ParcatPlot.html -->
-    <h2>Parcat plot showing the relationship between intermediate exposures, their respective pathway and direction of association with EC </h2>
-    <iframe src="EC_Tissue_ParcatPlot.html" width="100%" height="600px" title="EC Tissue Parcat Plot"></iframe>
+    <!-- Parcat Plot Container -->
+    <h2>Parcat plot showing the relationship between intermediate exposures, their respective pathway and direction of association with EC</h2>
+    <div id="parcat-plot-container"></div>
     
     <h2>Differential Biomarker Expression in Endometrial Cancer VS Normal Endometrium or Tumor-Adjacent Tissue.</h2>
-    <iframe src="EC_VS_NE_TreeMap.html" width="100%" height="600px" title="EC Tissue Parcat Plot"></iframe>
+    <div id="tree-map-container"></div>
 
     <!-- More content here -->
 </div>
@@ -30,6 +30,22 @@
 <footer>
     <!-- Footer content here -->
 </footer>
+
+<script>
+// Load EC_Tissue_ParcatPlot.html content
+fetch('EC_Tissue_ParcatPlot.html')
+    .then(response => response.text())
+    .then(html => {
+        document.getElementById('parcat-plot-container').innerHTML = html;
+    });
+
+// Load EC_VS_NE_TreeMap.html content
+fetch('EC_VS_NE_TreeMap.html')
+    .then(response => response.text())
+    .then(html => {
+        document.getElementById('tree-map-container').innerHTML = html;
+    });
+</script>
 
 </body>
 </html>
