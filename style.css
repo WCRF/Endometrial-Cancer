@@ -74,21 +74,39 @@ footer {
 
 /* Responsive Design Adjustments */
 @media screen and (max-width: 600px) {
+    nav ul {
+        display: block; /* Stacking nav items vertically */
+    }
+
     nav ul li {
-        display: block;
+        display: block; /* List items take full width */
         text-align: center;
         margin-right: 0;
     }
 
     nav ul li a {
-        display: block;
-        margin-bottom: 10px;
+        display: block; /* Full width links */
+        margin-bottom: 10px; /* Space between links */
     }
 
     .left-menu, .right-menu {
-        width: 100%;
-        position: static;
-        padding: 10px;
+        width: 100%; /* Full width for smaller screens */
+        position: static; /* Normal flow */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .main-content {
+        padding-left: 10px; /* Reduced padding */
+        padding-right: 10px;
+    }
+
+    /* Adjust font sizes if necessary for readability */
+    .readme-container h1, .readme-container h2 {
+        font-size: 20px; /* Example size, adjust as needed */
+    }
+
+    .readme-container p {
+        font-size: 16px; /* Example size, adjust as needed */
     }
 }
 
