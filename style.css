@@ -142,7 +142,7 @@ footer {
     padding-right: 220px; /* Adjust as needed, should be >= width of the right menu */
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .main-content {
         padding-left: 10px; /* Reduced padding for smaller screens */
         padding-right: 10px; /* Reduced padding for smaller screens */
